@@ -10,6 +10,8 @@
 
  </div> <!-- end .i4-site-wrapper -->
 
+ <?php wp_footer(); // this is necessary for the theme to function ?>
+
   <script>
   jQuery(document).foundation();
   </script>

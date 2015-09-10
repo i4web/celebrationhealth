@@ -95,11 +95,13 @@ add_action( 'widgets_init', 'i4_widgets_init' );
 function i4_scripts() {
 
   //Load the Stylesheets that we'll be using in the theme
-  wp_enqueue_style( 'foundation-css', get_template_directory_uri().'/foundation.css', array(), '5.5.2' );
+  wp_enqueue_style( 'foundation-css', get_template_directory_uri().'/assets/css/foundation.css', array(), '5.5.2' );
 
   //Load the scripts that we'll need to use for the theme
   wp_enqueue_script('jquery');
-  wp_enqueue_script( 'i4-modernizr', get_template_directory_uri().'/js/modernizr.js', array(), '2.8.3', false);
-  wp_enqueue_script( 'i4-modernizr', get_template_directory_uri().'/js/foundation.min.js', array('jquery'), '5.5.2', false);
+  wp_enqueue_script( 'i4-modernizr', get_template_directory_uri().'/assets/js/vendor/modernizr.js', array(), '2.8.3', false);
+  wp_enqueue_script( 'i4-modernizr', get_template_directory_uri().'/assets/js/foundation.min.js', array('jquery'), '5.5.2', false);
 
 }
+
+add_action( 'wp_enqueue_scripts', 'i4_scripts' );
