@@ -125,7 +125,7 @@ select {
 
 .row {
   margin: 0 auto;
-  max-width: 62.5em;
+  max-width: 80em;
   width: 100%; }
   .row:before, .row:after {
     content: " ";
@@ -2072,7 +2072,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin-bottom: 0;
     margin: 0 auto;
-    max-width: 62.5em; }
+    max-width: 80em; }
 
   .top-bar-section {
     transition: none 0 0;
@@ -3825,7 +3825,7 @@ blockquote p {
     .reveal-modal {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5em;
+      max-width: 80em;
       right: 0;
       width: 80%; } }
   @media only screen and (min-width: 40.0625em) {
@@ -3841,35 +3841,35 @@ blockquote p {
     .reveal-modal.tiny {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5em;
+      max-width: 80em;
       right: 0;
       width: 30%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.small {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5em;
+      max-width: 80em;
       right: 0;
       width: 40%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.medium {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5em;
+      max-width: 80em;
       right: 0;
       width: 60%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.large {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5em;
+      max-width: 80em;
       right: 0;
       width: 70%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.xlarge {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5em;
+      max-width: 80em;
       right: 0;
       width: 95%; } }
   .reveal-modal.full {
@@ -3884,7 +3884,7 @@ blockquote p {
       .reveal-modal.full {
         left: 0;
         margin: 0 auto;
-        max-width: 62.5em;
+        max-width: 80em;
         right: 0;
         width: 100%; } }
   .reveal-modal.toback {
