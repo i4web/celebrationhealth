@@ -8,6 +8,10 @@
  */ ?>
 
 
+ </div> <!-- end .i4-site-wrapper -->
 
+  <script>
+  jQuery(document).foundation();
+  </script>
 </body>
 </html>
