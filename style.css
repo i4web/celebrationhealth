@@ -7,3 +7,20 @@ Description: This theme is a custom WordPress template created for Florida Hospi
 Version: 1.0
 Text Domain: celebrationhealth
 */
+
+
+/*******************
+My Courses
+*******************/
+.my-course-meta {
+    display: inline-block;
+    width: 100%;
+}
+.my-course-title {
+    float: left;
+}
+.my-course-pct-complete {
+    float: right;
+    margin-top: 10px;
+    padding-right: 5%;
+}
