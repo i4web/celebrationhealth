@@ -19,6 +19,9 @@
 
     <?php endwhile; // End of the loop. ?>
         </div> <!-- end . large-9 columns -->
+
+        <?php get_sidebar(); //display the sidebar ?>
+
     </div> <!-- end .row -->
   </main>
 
@@ -26,6 +29,4 @@
 
 
 
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
