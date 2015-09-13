@@ -8,19 +8,128 @@ Version: 1.0
 Text Domain: celebrationhealth
 */
 
+body{
+  background-color: #FFECBC;
+}
+
+/*******************
+Typography
+*******************/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova", sans-serif;
+}
+
+.font-success {
+  color: #3BBF4D;
+}
+
+/*******************
+Button Colors
+*******************/
+.button.blue {
+    background-color: #2a819f;
+    border-color: #287A96;
+    color: #FFF;
+}
+
+.button.blue:hover {
+    background-color: #3196B9;
+    border-color: #2a819f;
+    color: #FFF;
+}
+
+/*******************
+Top Bar
+*******************/
+@media only screen and (min-width: 58.75em){
+.top-bar {
+  background: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.23);
+  height: 3.2rem;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #FFF;
+}
+}
+
+.top-bar .name h1 a,
+.top-bar .name h2 a,
+.top-bar .name h3 a,
+.top-bar .name h4 a,
+.top-bar .name p a,
+.top-bar .name span a{
+  color: #7C3520;
+}
+
+.nav-logo{
+  padding: 1.2rem;
+}
+
+.top-bar-section ul li > a{
+  color: #7C3520;
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+  background: #FFF;
+}
+.top-bar-section ul li:hover:not(.has-form) > a{
+  color: #f88e29;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button){
+  background-color: #FFF;
+  color: #f88e29;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover{
+  background-color: #FFF;
+  color: #f88e29;
+}
 
 /*******************
 My Courses
 *******************/
+.my-course-wrapper {
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
 .my-course-meta {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 .my-course-title {
-    float: left;
+  float: left;
 }
 .my-course-pct-complete {
-    float: right;
-    margin-top: 10px;
-    padding-right: 5%;
+  color: #929292;
+  float: right;
+  font-style: italic;
+  font-size: .846rem;
+  margin-top: 10px;
+  padding-right: 1rem;
+}
+.my-course-module-title h4 {
+  font-size: 1.1rem;
+}
+.my-course-units-table{
+  border: 0px;
+  width: 100%;
+}
+
+.my-course-units-table td{
+  line-height: 3rem;
+}
+
+.completed-icon {
+  padding-right: 1.6rem;
+}
+
+
+/*******************
+Main content
+*******************/
+.content-wrapper {
+  background-color: #FFF;
+  box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.23);
+  margin-top: 0.9375em;
 }
