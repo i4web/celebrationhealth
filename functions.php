@@ -96,6 +96,7 @@ function i4_scripts() {
 
   //Load the Stylesheets that we'll be using in the theme
   wp_enqueue_style( 'foundation-css', get_template_directory_uri().'/assets/css/foundation.css', array(), '5.5.2' );
+  wp_enqueue_style( 'font-awesome-style', get_template_directory_uri().'/assets/css/font-awesome.min.css', array(), '4.4.0');
   wp_enqueue_style( 'i4-main-style', get_template_directory_uri().'/style.css', array(), '5.5.2' );
 
   //Load the scripts that we'll need to use for the theme
@@ -106,3 +107,15 @@ function i4_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'i4_scripts' );
+
+/**
+ * Insert the typkit scripts into the head of the site.
+ */
+function i4_type_kit() {
+
+  $type_kit_output = '<script src="https://use.typekit.net/zlc5iom.js"></script>
+                      <script>try{Typekit.load({ async: true });}catch(e){}</script>';
+  echo $type_kit_output;
+}
+
+add_action( 'wp_head', 'i4_type_kit' );
