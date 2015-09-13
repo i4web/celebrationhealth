@@ -19,11 +19,15 @@
   <body <?php body_class(); ?>>
     <div class="i4-site-wrapper">
 
+      <?php $i4_settings = get_option( 'i4-lms-settings' ); //Retrieve the i4 LMS Settings
+            $nav_logo = esc_attr( $i4_settings['i4-lms-nav-logo'] );
+       ?>
+
       <!-- Begin Navbar -->
       <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">My Site</a></h1>
+          <a href="#" class="nav-logo" title="<?php echo get_bloginfo('title');?>"><img src="<?php echo $nav_logo;?>"/></a>
         </li>
          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -32,19 +36,17 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          <li class="active"><a href="#">Right Button Active</a></li>
+          <li class="active"><a href="<?php echo  get_home_url(); ?>" title="View Assigned Courses">My Courses</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+
           <li class="has-dropdown">
-            <a href="#">Right Button Dropdown</a>
+            <a href="#">Welcome, Jonathan</a>
             <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
+              <li><a href="#">Your Profile</a></li>
+              <li><a href="#">Logout</a></li>
             </ul>
           </li>
-        </ul>
-
-        <!-- Left Nav Section -->
-        <ul class="left">
-          <li><a href="#">Left Nav Button</a></li>
         </ul>
       </section>
     </nav>
