@@ -10,6 +10,7 @@ Text Domain: celebrationhealth
 
 body{
   background-color: #FFECBC;
+  font-weight: 300;
 }
 
 /*******************
@@ -17,6 +18,10 @@ Typography
 *******************/
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", sans-serif;
+}
+
+p{
+  font-weight: 300 !important;
 }
 
 .font-success {
@@ -41,6 +46,10 @@ Button Colors
 /*******************
 Top Bar
 *******************/
+.top-bar{
+
+}
+
 @media only screen and (min-width: 58.75em){
 .top-bar {
   background: #FFF;
@@ -90,16 +99,30 @@ My Courses
 *******************/
 .my-course-wrapper {
   border-bottom: 1px solid #E0E0E0;
-  padding-bottom: 2%;
-  padding-top: 2%;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  background-color: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.23);
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
+
 .my-course-meta {
+  border-bottom: 1px solid #EAEAEA;
   display: inline-block;
+  margin-bottom: 1rem;
   width: 100%;
 }
+
 .my-course-title {
   float: left;
 }
+
+.my-course-title h3 {
+  color: #7C3520;
+  font-size: 1.2rem;
+}
+
 .my-course-pct-complete {
   color: #929292;
   float: right;
@@ -108,12 +131,19 @@ My Courses
   margin-top: 10px;
   padding-right: 1rem;
 }
+
 .my-course-module-title h4 {
   font-size: 1.1rem;
 }
+
 .my-course-units-table{
   border: 0px;
+  border-left: 3px solid #e6e6e6;
   width: 100%;
+}
+
+.my-course-units-table a{
+  color: #2a819f;
 }
 
 .my-course-units-table td{
@@ -129,7 +159,12 @@ My Courses
 Main content
 *******************/
 .content-wrapper {
-  background-color: #FFF;
-  box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.23);
+  margin-top: 0.9375em;
+}
+
+/*******************
+Sidebar
+*******************/
+#sidebar {
   margin-top: 0.9375em;
 }
