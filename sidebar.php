@@ -10,6 +10,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<div id="sidebar" class="large-3 columns" role="complementary">
+<div id="sidebar" class="large-3 columns my-course-wrapper" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
