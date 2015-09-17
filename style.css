@@ -177,6 +177,11 @@ Sidebar
   margin-top: 0.9375em;
 }
 
+.widget-title {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: .5rem;
+}
+
 .announcements-list a{
   font-size: 0.875rem;
 }
