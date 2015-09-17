@@ -81,7 +81,7 @@ function i4_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'celebrationhealth' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s my-course-wrapper">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',

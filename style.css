@@ -17,7 +17,16 @@ body{
 Typography
 *******************/
 h1, h2, h3, h4, h5, h6 {
+  color: #7C3520;
   font-family: "proxima-nova", sans-serif;
+}
+
+h3{
+  font-size: 1.2rem;
+}
+
+a{
+  color: #2a819f;
 }
 
 p{
@@ -29,7 +38,7 @@ p{
 }
 
 /*******************
-Button Colors
+Buttons
 *******************/
 .button.blue {
     background-color: #2a819f;
@@ -41,6 +50,10 @@ Button Colors
     background-color: #3196B9;
     border-color: #2a819f;
     color: #FFF;
+}
+
+.expand {
+  padding: .5rem;
 }
 
 /*******************
@@ -118,11 +131,6 @@ My Courses
   float: left;
 }
 
-.my-course-title h3 {
-  color: #7C3520;
-  font-size: 1.2rem;
-}
-
 .my-course-pct-complete {
   color: #929292;
   float: right;
@@ -167,4 +175,28 @@ Sidebar
 *******************/
 #sidebar {
   margin-top: 0.9375em;
+}
+
+.announcements-list a{
+  font-size: 0.875rem;
+}
+
+.announcements-list li {
+  height: auto;
+  border-bottom: 1px solid #E0E0E0;
+  margin-top: 1rem;
+}
+
+.announcement-feat-img {
+  width: 3.1675rem;
+  height: 3.1675rem;
+  float: left;
+  margin-right: 1rem;
+  margin-top: .2rem;
+}
+
+.announcement-posted-date {
+    color: #929292;
+    font-style: italic;
+    font-size: .846rem;
 }
