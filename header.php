@@ -27,7 +27,7 @@
       <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <a href="#" class="nav-logo" title="<?php echo get_bloginfo('title');?>"><img src="<?php echo $nav_logo;?>"/></a>
+          <a href="<?php echo get_bloginfo('url');?>" class="nav-logo" title="<?php echo get_bloginfo('title');?>"><img src="<?php echo $nav_logo;?>"/></a>
         </li>
          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
