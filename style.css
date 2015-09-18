@@ -110,7 +110,8 @@ Top Bar
 /*******************
 My Courses
 *******************/
-.my-course-wrapper {
+.my-course-wrapper,
+.course-unit-wrapper {
   border-bottom: 1px solid #E0E0E0;
   padding-bottom: 3rem;
   padding-top: 2rem;
@@ -182,8 +183,9 @@ Sidebar
     padding-bottom: .5rem;
 }
 
-.announcements-list a{
+.announcements-list {
   font-size: 0.875rem;
+  line-height: 1rem;
 }
 
 .announcements-list li {
@@ -202,6 +204,5 @@ Sidebar
 
 .announcement-posted-date {
     color: #929292;
-    font-style: italic;
     font-size: .846rem;
 }
