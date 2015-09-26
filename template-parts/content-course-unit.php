@@ -41,10 +41,12 @@ $unit_status = I4Web_LMS()->i4_wpcw->i4_is_unit_complete( $unit_parent_data->cou
           <td><strong>Unit</strong></td>
           <td><?php echo get_the_title(); ?></td>
         </tr>
+        <?php if( $video_length != '' ){  //Only display the video length if it has been entered. ?>
         <tr>
           <td><strong>Length</strong></td>
           <td><?php echo $video_length; ?></td>
         </tr>
+        <?php } ?>
       </table>
 
 <?php echo I4Web_LMS()->i4_wpcw_front_end_unit->i4_lms_unit_actions(); ?>
