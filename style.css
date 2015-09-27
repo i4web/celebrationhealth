@@ -61,6 +61,22 @@ Buttons
 }
 
 /*******************
+Tabs
+*******************/
+.tab-title.active {
+  border-right: 1px solid #e6e6e6;
+}
+.tabs dd.active a, .tabs .tab-title.active a{
+  border-top: 1px solid #e6e6e6;
+  border: 1px solid #e6e6e6;
+  border-bottom: 0px;
+}
+.tabs dd > a, .tabs .tab-title > a{
+  background-color: #FFF;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/*******************
 Top Bar
 *******************/
 .top-bar{
@@ -88,7 +104,7 @@ Top Bar
 }
 
 .nav-logo{
-  padding: 1.2rem;
+  padding: 1.9375rem;
 }
 
 .top-bar-section ul li > a{
@@ -169,6 +185,14 @@ My Courses
 
 
 /*******************
+Pages
+*******************/
+.page-wrapper {
+  margin-right: 0.9375rem;
+  margin-left: 0.9375rem;
+}
+
+/*******************
 Main content
 *******************/
 .content-wrapper {
@@ -237,4 +261,21 @@ Unit Courses
 }
 .video-details tr.even, table tr.alt, table tr:nth-of-type(even){
   background: #FFF;
+}
+
+
+/********************
+Footer
+********************/
+footer {
+  margin-top: 2rem;
+}
+.footer-wrapper{
+  text-align: center;
+}
+.tagline {
+  font-style: italic;
+}
+.copyright, .tagline {
+  font-size: .9375rem;
 }
