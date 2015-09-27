@@ -11,7 +11,8 @@ $unit_parent_data = WPCW_units_getAssociatedParentData($post->ID);
 $user_id = get_current_user_id();
 
 $video_id = get_post_meta( $post->ID, 'video-id', true ); //Grab the Video ID for displaying in the Vimeo iFrame
-$video_length = get_post_meta ( $post->ID, 'video-length', true ); //Grab the Video length for displaying in the video details
+$video_length = get_post_meta( $post->ID, 'video-length', true ); //Grab the Video length for displaying in the video details
+$video_description = get_post_meta( $post->ID, 'video-description', true ); //Grab the Video Description
 
 
 //var_dump($unit_parent_data);
@@ -21,9 +22,13 @@ $unit_status = I4Web_LMS()->i4_wpcw->i4_is_unit_complete( $unit_parent_data->cou
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="unit-content">
+<article id="post-<?php the_ID(); ?>" class="course-unit-wrapper">
   <h3><?php echo get_the_title(); ?></h3>
-  <p class="unit-details">This is a brief description that will be created via metadata</p>
+
+  <?php if ( $video_description != ''){ ?>
+    <p class="video-description"><?php echo $video_description; ?></p>
+  <?php } ?>
+
   <div class="row">
     <div class="large-8 columns video-content-wrapper">
       <div class="flex-video">

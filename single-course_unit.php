@@ -12,7 +12,7 @@ get_header(); ?>
 
   <main id="main" class="site-main" role="main"> <!-- role="main" added for ARIA compatibility on Internet Explorer -->
     <div class="row">
-				<div class="large-12 columns small-centered course-unit-wrapper" role="content">
+				<div class="large-12 columns small-centered" role="content">
 
     <?php while ( have_posts() ) : the_post(); ?>
 
