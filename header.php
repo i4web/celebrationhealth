@@ -43,8 +43,8 @@
           <li class="has-dropdown">
             <a href="#">Welcome, Jonathan</a>
             <ul class="dropdown">
-              <li><a href="#">Your Profile</a></li>
-              <li><a href="#">Logout</a></li>
+              <li><a href="/profile">Your Profile</a></li>
+              <li><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Logout</a></li>
             </ul>
           </li>
         </ul>
