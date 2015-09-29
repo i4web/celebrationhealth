@@ -80,17 +80,54 @@ Tabs
 Top Bar
 *******************/
 .top-bar{
+  background-color:#FFF;
+}
+.top-bar .name{
+  background-color: #FFF;
+}
 
+.top-bar-section ul li {
+  background: #FFF;
+}
+
+.top-bar .toggle-topbar.menu-icon a {
+  color: #7C3520;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after{
+  box-shadow: 0 0 0 1px #7C3520, 0 7px 0 1px #7C3520, 0 14px 0 1px #7C3520;
+}
+
+.top-bar-section .has-dropdown > a:after{
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(248, 142, 41, 0.7);
+}
+
+.top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a{
+  color: #f88e29;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a{
+  background-color: #FFF;
 }
 
 @media only screen and (min-width: 58.75em){
 .top-bar {
-  background: #FFF;
   box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.23);
   height: 3.2rem;
 }
+
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #FFF;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button){
+  background: #FFF;
+  color: #7C3520;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button){
+  background-color: #7C3520;
+  color: #FFF;
 }
 }
 
