@@ -19,8 +19,13 @@
   <body <?php body_class(); ?>>
     <div class="i4-site-wrapper">
 
-      <?php $i4_settings = get_option( 'i4-lms-settings' ); //Retrieve the i4 LMS Settings
+      <?php
+            $i4_current_user = wp_get_current_user();
+            $i4_settings = get_option( 'i4-lms-settings' ); //Retrieve the i4 LMS Settings
             $nav_logo = esc_attr( $i4_settings['i4-lms-nav-logo'] );
+
+            $i4_user_courses =  I4Web_LMS()->i4_wpcw->i4_get_assigned_courses( $i4_current_user->ID );
+
        ?>
 
       <!-- Begin Navbar -->
@@ -37,8 +42,15 @@
         <!-- Right Nav Section -->
         <ul class="right">
           <li class="active"><a href="<?php echo  get_home_url(); ?>" title="View Assigned Courses">My Courses</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
+
+          <?php foreach ($i4_user_courses as $i4_user_course){
+
+            $course_permalink = sanitize_title($i4_user_course->course_title);
+
+            echo '<li><a href="'.$course_permalink.'">'. $i4_user_course->course_title .'</a><li>';
+          }
+
+          ?>
 
           <li class="has-dropdown">
             <a href="#">Welcome, Jonathan</a>
