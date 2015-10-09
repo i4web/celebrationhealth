@@ -56,6 +56,18 @@ Buttons
     color: #FFF;
 }
 
+.button.grey {
+    background-color: #e6e6e6;
+    border-color: #CECECE;
+    color: #3196B9;
+}
+
+.button.grey:hover {
+    background-color: #CECECE;
+    border-color: #000;
+    color: #3196B9;
+}
+
 .expand {
   padding: .5rem;
 }
@@ -74,6 +86,13 @@ Tabs
 .tabs dd > a, .tabs .tab-title > a{
   background-color: #FFF;
   border-bottom: 1px solid #e6e6e6;
+}
+
+/*******************
+Images
+*******************/
+.img-circle{
+  border-radius: 50%;
 }
 
 /*******************
@@ -220,6 +239,16 @@ My Courses
   padding-right: 1.6rem;
 }
 
+.my-courses-congrats {
+  background-color: #d9edf7;
+  border-radius: .3rem;
+  padding: 0.4rem;
+}
+.my-courses-congrats p {
+  color: #31708f;
+  margin-bottom: 0rem;
+}
+
 
 /*******************
 Pages
@@ -242,9 +271,9 @@ Titles
 *******************/
 .widget-title,
 .video-details-title,
-.course-nav-title {
+.course-nav-title,
+.course-coordinator-title {
   border-bottom: 1px solid #e6e6e6;
-  padding-bottom: .5rem;
 }
 
 /*******************
@@ -254,6 +283,10 @@ Unit Action Area
   color: #929292;
   font-size: .9rem;
   padding-bottom: 1rem;
+}
+
+a.fe_btn.fe_btn_navigation.button {
+  margin-top: 1.3rem;
 }
 
 
@@ -294,12 +327,25 @@ Unit Courses
 ********************/
 .video-details {
   border: 0px;
+  margin-bottom: 1rem;
   width: 100%;
 }
 .video-details tr.even, table tr.alt, table tr:nth-of-type(even){
   background: #FFF;
 }
 
+.course-coordinator-details {
+  margin-top: 1.8rem;
+}
+
+.course-coordinator-img {
+  float: left;
+  margin-right: 2rem;
+}
+
+.course-coordinator-img img {
+  margin-bottom: .7rem;
+}
 
 /********************
 Footer
