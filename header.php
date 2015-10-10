@@ -57,6 +57,9 @@
             <li class="has-dropdown">
               <a href="#">Welcome, Jonathan</a>
               <ul class="dropdown">
+              <?php if( current_user_can( 'edit_pages' )){  //Add a link to the dashboard that only site admins can see ?>
+                <li><a href="<?php echo admin_url();?>">Dashboard</a></li>
+              <?php }?>
                 <li><a href="/profile">Your Profile</a></li>
                 <li><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Logout</a></li>
               </ul>
