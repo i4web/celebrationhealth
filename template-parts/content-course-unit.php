@@ -29,20 +29,21 @@ $i4_coordinator_email = $i4_course_coordinator->coordinator_email;
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="course-unit-wrapper">
-  <h3><?php echo get_the_title(); ?></h3>
-
-  <?php if ( $video_description != ''){ ?>
-    <p class="video-description"><?php echo $video_description; ?></p>
-  <?php } ?>
-
   <div class="row">
     <div class="large-8 columns video-content-wrapper">
       <div class="flex-video">
         <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
+      <div class="video-controls-wrapper">
+        <h3><?php echo get_the_title(); ?></h3>
+
+        <?php if ( $video_description != ''){ ?>
+          <p class="video-description"><?php echo $video_description; ?></p>
+        <?php } ?>
+      </div>
     </div> <!-- end .video-content-wrapper -->
     <div class="large-4 columns video-details-wrapper">
-      <h4 class="video-details-title">Video Details</h4>
+      <h4 class="video-details-title">Unit Details</h4>
       <div class="row">
         <div class="course-coordinator-wrapper large-12 columns">
           <div class="course-coordinator-details">
@@ -84,7 +85,7 @@ $i4_coordinator_email = $i4_course_coordinator->coordinator_email;
         <?php } ?>
       </table>
 
-      <?php echo I4Web_LMS()->i4_wpcw_front_end_unit->i4_lms_unit_actions();      ?>
+      <?php echo I4Web_LMS()->i4_wpcw_front_end_unit->i4_lms_unit_actions(); ?>
 
     </div>
   </div> <!-- end row -->
