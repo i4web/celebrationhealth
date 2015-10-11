@@ -16,7 +16,7 @@
 				<div class="large-9 columns content-wrapper" role="content">
     <?php while ( have_posts() ) : the_post(); ?>
 
-      <?php get_template_part( 'template-parts/content', 'page' ); ?>
+      <?php get_template_part( 'template-parts/content', 'my-courses-page' ); ?>
 
     <?php endwhile; // End of the loop. ?>
         </div> <!-- end . large-9 columns -->
