@@ -8,8 +8,9 @@
 //Store the Parent Data for the Unit for use.
 $unit_parent_data = WPCW_units_getAssociatedParentData($post->ID);
 
-$i4_user = wp_get_current_user();
-$user_id = $i4_user->ID;
+global $current_i4_user;
+//$current_i4_user = wp_get_current_user();
+$user_id = $current_i4_user->ID;
 
 $video_id = get_post_meta( $post->ID, 'video-id', true ); //Grab the Video ID for displaying in the Vimeo iFrame
 $video_length = get_post_meta( $post->ID, 'video-length', true ); //Grab the Video length for displaying in the video details
@@ -58,7 +59,7 @@ $i4_coordinator_email = $i4_course_coordinator->coordinator_email;
                     <h5 class="text-center"><?php echo $i4_coordinator_name; ?><br/><small>Course Coordinator</small></h5>
                   <p id="modalTitle" class="text-center">I'm here to assist you with any questions or concerns that you may have. Just fill out the form below to email me directly.</p>
                   <hr>
-                  <?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true" field_values="patient_username='.$i4_user->user_login.'&amp;coordinator_email='.$i4_coordinator_email.'&amp;user_email='.$i4_user->user_email.'"]' ); ?>
+                  <?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true" field_values="patient_username='.$current_i4_user->user_login.'&amp;coordinator_email='.$i4_coordinator_email.'&amp;user_email='.$current_i4_user->user_email.'"]' ); ?>
                   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                 </div>
 
