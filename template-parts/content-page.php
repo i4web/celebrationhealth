@@ -8,6 +8,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<?php the_content(); ?>
+  <div class="page-content-wrapper">
+    <div class="page-title"><h3><?php echo get_the_title();?></h3></div>
+    <?php the_content(); ?>
+  </div>
 
 </article>
