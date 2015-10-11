@@ -9,7 +9,7 @@
 $unit_parent_data = WPCW_units_getAssociatedParentData($post->ID);
 
 global $current_i4_user;
-//$current_i4_user = wp_get_current_user();
+
 $user_id = $current_i4_user->ID;
 
 $video_id = get_post_meta( $post->ID, 'video-id', true ); //Grab the Video ID for displaying in the Vimeo iFrame
