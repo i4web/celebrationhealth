@@ -187,7 +187,8 @@ Top Bar
 My Courses
 *******************/
 .my-course-wrapper,
-.course-unit-wrapper {
+.course-unit-wrapper,
+.page-content-wrapper {
   background-color: #FFF;
   border-bottom: 1px solid #E0E0E0;
   box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.23);
