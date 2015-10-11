@@ -22,7 +22,6 @@
 
       <?php
             global $current_i4_user;
-            $i4_current_user = wp_get_current_user();
             $i4_settings = get_option( 'i4-lms-settings' ); //Retrieve the i4 LMS Settings
             $nav_logo = esc_attr( $i4_settings['i4-lms-nav-logo'] );
 
