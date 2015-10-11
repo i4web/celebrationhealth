@@ -55,7 +55,7 @@
             ?>
 
             <li class="has-dropdown">
-              <a href="#">Welcome, Jonathan</a>
+              <a href="#">Welcome, <?php echo $i4_current_user->first_name;?></a>
               <ul class="dropdown">
               <?php if( current_user_can( 'edit_pages' )){  //Add a link to the dashboard that only site admins can see ?>
                 <li><a href="<?php echo admin_url();?>">Dashboard</a></li>
