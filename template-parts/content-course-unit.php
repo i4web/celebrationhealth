@@ -33,7 +33,7 @@ $i4_coordinator_email = $i4_course_coordinator->coordinator_email;
   <div class="row">
     <div class="large-8 columns video-content-wrapper">
       <div class="flex-video">
-        <iframe src="https://player.vimeo.com/video/<?php echo $video_id; ?>?api=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe id="<?php echo $video_id; ?>" src="https://player.vimeo.com/video/<?php echo $video_id; ?>?api=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div class="video-controls-wrapper">
         <h3><?php echo get_the_title(); ?></h3>
