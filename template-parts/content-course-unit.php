@@ -78,12 +78,10 @@ $i4_coordinator_email = $i4_course_coordinator->coordinator_email;
           <td><strong>Unit</strong></td>
           <td><?php echo get_the_title(); ?></td>
         </tr>
-        <?php if( $video_length != '' ){  //Only display the video length if it has been entered. ?>
         <tr>
           <td><strong>Length</strong></td>
-          <td><?php echo $video_length; ?></td>
+          <td><?php echo I4Web_LMS()->i4_vimeo->get_duration($video_id); ?></td>
         </tr>
-        <?php } ?>
       </table>
 
       <?php echo I4Web_LMS()->i4_wpcw_front_end_unit->i4_lms_unit_actions(); ?>
