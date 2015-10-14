@@ -1,17 +1,12 @@
 <?php
 /**
- * The main template file for celebrationhealth.
+ * Default template for displaying all pages.
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package celebrationhealth
  */
 
-get_header(); ?>
+ get_header(); ?>
 
 <div class="page-wrapper">
 
@@ -20,7 +15,7 @@ get_header(); ?>
 				<div class="large-9 columns content-wrapper" role="content">
     <?php while ( have_posts() ) : the_post(); ?>
 
-      <?php get_template_part( 'template-parts/content', 'index' ); ?>
+      <?php get_template_part( 'template-parts/content', 'page' ); ?>
 
     <?php endwhile; // End of the loop. ?>
         </div> <!-- end . large-9 columns -->
@@ -32,5 +27,6 @@ get_header(); ?>
 
 </div> <!-- end .page-wrapper -->
 
-<?php get_sidebar(); ?>
+
+
 <?php get_footer(); ?>
