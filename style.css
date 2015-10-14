@@ -184,6 +184,16 @@ Top Bar
 }
 
 /*******************
+Completed Banner
+*******************/
+.banner-wrapper{
+  display:none;
+}
+.banner-wrapper.sticky.sticky-div.fixed {
+  top: 2.80rem;
+}
+
+/*******************
 My Courses
 *******************/
 .my-course-wrapper,

@@ -72,3 +72,9 @@
         </section>
       </nav>
     </div>
+    <div class="banner-wrapper sticky sticky-div">
+      <div data-alert id="completed-banner" class="alert-box success radius text-center">
+        Congratulations! This video and unit has been completed! <span id="completed-next-link">**Next Link Can Go Here**</span>
+        <a href="#" class="close">&times;</a>
+      </div>
+    </div> <!-- end .banner-wrapper -->
