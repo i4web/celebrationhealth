@@ -28,23 +28,8 @@
             $i4_settings = get_option( 'i4-lms-settings' ); //Retrieve the i4 LMS Settings
             $nav_logo = esc_attr( $i4_settings['i4-lms-nav-logo'] );
 
-            $access_token = esc_attr( $i4_settings['i4-lms-vimeo-access-token'] );
-            $client_id = esc_attr( $i4_settings['i4-lms-vimeo-client-identifier'] );
-            $client_secret = esc_attr( $i4_settings['i4-lms-vimeo-client-secrets'] );
-
             $i4_user_courses =  I4Web_LMS()->i4_wpcw->i4_get_assigned_courses( $current_i4_user->ID );
 
-            $lib = new \Vimeo\Vimeo($client_id, $client_secret);
-            $scope = array('public', 'private' );
-            $token = $lib->clientCredentials($scope);
-            // usable access token
-            var_dump($token->body->access_token);
-
-            // accepted scopes
-            var_dump($token->body->scope);
-            $lib->setToken($token->body->access_token);
-            $response = $lib->request('/users/44252338/videos', array('per_page' => 2), 'GET');
-            var_dump($response['body']);
        ?>
 
       <!-- Begin Navbar -->
