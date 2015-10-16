@@ -350,12 +350,24 @@ Unit Courses
 }
 
 .course-coordinator-img {
-  float: left;
-  margin-right: 2rem;
+    float: left;
+    margin-right: 2rem;
 }
 
 .course-coordinator-img img {
-  margin-bottom: .7rem;
+    margin-bottom: .7rem;
+}
+
+/********************
+Posts
+********************/
+.featured-img-wrapper {
+    padding-bottom: 1rem;
+}
+
+.post-title {
+    line-height: .5;
+    padding-bottom: 1rem;
 }
 
 /********************
@@ -365,11 +377,52 @@ footer {
   margin-top: 2rem;
 }
 .footer-wrapper{
-  text-align: center;
+    background-color: #FFF;
+    border-top: 1px solid #E0E0E0;
+    box-shadow: 0px 10px 6px 9px rgba(35, 31, 32, 0.23);
+    padding: 1rem;
+    text-align: center;
 }
 .tagline {
-  font-style: italic;
+    font-style: italic;
 }
 .copyright, .tagline {
-  font-size: .9375rem;
+    font-size: .9375rem;
+}
+
+.creation-acronym {
+    margin: .5rem;
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.creation-acronym a {
+    font-size: 1.3rem;
+}
+
+.creation-blue{
+    background-color: #01AEF0;
+}
+.creation-green{
+    background-color: #66AA3D;
+}
+
+.creation-orange{
+    background-color: #F67F21;
+}
+
+.creation-pink{
+    background-color: #CF406C;
+}
+
+.creation-purple{
+    background-color: #A83E98;
+}
+
+.creation-red{
+    background-color: #EE1C25;
 }
