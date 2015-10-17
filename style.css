@@ -193,6 +193,12 @@ Completed Banner
   top: 2.80rem;
 }
 
+#completed-banner {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
 /*******************
 My Courses
 *******************/
@@ -350,25 +356,54 @@ Unit Courses
 }
 
 .course-coordinator-img {
-    float: left;
-    margin-right: 2rem;
+  float: left;
+  margin-right: 2rem;
 }
 
 .course-coordinator-img img {
-    margin-bottom: .7rem;
+  margin-bottom: .7rem;
 }
 
 /********************
 Posts
 ********************/
 .featured-img-wrapper {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .post-title {
-    line-height: .5;
-    padding-bottom: 1rem;
+  line-height: .5;
+  padding-bottom: 1rem;
 }
+
+/********************
+Page Navi
+********************/
+.wp-pagenavi {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: .5rem;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  border: 0px;
+  color: #929292;
+}
+
+.wp-pagenavi .current {
+  background-color: #7C3520;
+  border-radius: 0.3rem;
+  color: #FFF;
+}
+
+/********************
+Category
+********************/
+.category-title {
+  line-height: 1;
+  margin-top: 2rem;
+}
+
 
 /********************
 Footer
