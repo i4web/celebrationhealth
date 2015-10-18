@@ -24,8 +24,7 @@
     <div class="i4-site-wrapper">
 
       <?php
-            global $current_i4_user;
-            $i4_settings = get_option( 'i4-lms-settings' ); //Retrieve the i4 LMS Settings
+            global $current_i4_user, $i4_settings;
             $nav_logo = esc_attr( $i4_settings['i4-lms-nav-logo'] );
 
             $i4_user_courses =  I4Web_LMS()->i4_wpcw->i4_get_assigned_courses( $current_i4_user->ID );
