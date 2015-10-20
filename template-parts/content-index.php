@@ -13,7 +13,7 @@ $i4_post_title = get_the_title();
   <div class="page-content-wrapper">
     <div class="post-title">
         <h3><?php echo $i4_post_title; ?></h3>
-        <?php echo i4_lms_posted_on(); ?>
+        <?php echo i4_lms_posted_on() . ' ' . i4_lms_post_category(); ?>
     </div>
       <div class="featured-img-wrapper">
       <?php if ( has_post_thumbnail() ) {
