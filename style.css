@@ -270,10 +270,6 @@ My Courses
   padding: 0.4rem 1rem !important;
 }
 
-.completed-icon {
-  padding-right: 1.6rem;
-}
-
 .my-courses-congrats {
   background-color: #d9edf7;
   border-radius: .3rem;
@@ -358,7 +354,7 @@ Sidebar
 
 
 /********************
-Unit Courses
+Unit Course Templates
 ********************/
 .video-details {
   border: 0px;
@@ -380,6 +376,56 @@ Unit Courses
 
 .course-coordinator-img img {
   margin-bottom: .7rem;
+}
+
+.coordinator-test-layout {
+  text-align: center;
+}
+
+#wpcw_fe_outer_wrap{
+  color: #222222;
+  font-weight: 300 !important;
+  font-size: 1rem;
+}
+
+/********************
+Course Quizzes
+********************/
+ul.wpcw_fe_quiz_q_answers {
+  list-style: none;
+}
+
+.wpcw_fe_quiz_q_single {
+  padding-top: 1rem;
+  border-bottom: 1px solid #E6e6e6;
+  padding-bottom: 1rem;
+}
+
+.wpcw_fe_quiz_pass_mark {
+  font-size: .9rem;
+  color: #929292;
+}
+
+.wpcw_fe_quiz_q_title {
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.wpcw_fe_quiz_q_hint {
+  color: #929292;
+  font-style: italic;
+  font-size: .9rem;
+}
+
+/********************
+Course Errors
+********************/
+.wpcw_fe_progress_box.wpcw_fe_progress_box_error {
+    background-color: #f04124;
+    border-color: #de2d0f;
+    color: #FFFFFF;
+    padding: .3rem;
+    text-align: center;
 }
 
 /********************
@@ -442,8 +488,19 @@ footer {
 .footer-sub-menu-wrapper{
   border-top: 1px solid #e6e6e6;
   padding-top: 1.5rem;
+}
+
+.footer-sub-left-list li {
+  float: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  list-style: none;
+}
+
+.footer-sub-right{
   text-align: center;
 }
+
 .tagline-copyright-wrapper {
   padding-top: 1rem;
 }
@@ -456,9 +513,13 @@ footer {
   margin-bottom: 0.5rem;
   color: #9E9E9E;
 }
+
 .creation-health-acronym-wrapper {
-  padding-left: 0;
+  display: block;
+  padding: 2rem 0;
+  text-align: center;
 }
+
 .creation-acronym {
     margin: .5rem;
     color: #FFF;
