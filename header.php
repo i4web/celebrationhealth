@@ -44,14 +44,14 @@
 
         <section class="top-bar-section">
           <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="active"><a href="<?php echo  get_home_url(); ?>" title="View Assigned Courses">My Courses</a></li>
+          <ul class="right top-bar-menu">
+            <li ><a href="<?php echo  get_home_url(); ?>" title="View Assigned Courses">My Courses</a></li>
 
             <?php foreach ($i4_user_courses as $i4_user_course){
 
               $course_permalink = sanitize_title($i4_user_course->course_title);
 
-              echo '<li><a href="'.$course_permalink.'">'. $i4_user_course->course_title .'</a><li>';
+              echo '<li><a href="/'.$course_permalink.'">'. $i4_user_course->course_title .'</a><li>';
             }
 
             ?>
