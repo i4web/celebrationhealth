@@ -5,7 +5,12 @@
  * @todo Describe what this file contains
  *
  * @package celebrationhealth
- */ ?>
+ */
+
+ global $current_i4_user, $i4_settings;
+ $nav_logo = esc_attr( $i4_settings['i4-lms-nav-logo'] );
+
+ ?>
 
  <footer>
    <div class="footer-menu-wrapper">
@@ -35,8 +40,8 @@
          </ul>
        </div>
        <div class="columns large-4 footer-sub-right">
-         <img src="http://celebrationhealtheducation.com/wp-content/uploads/2015/09/fh-nav-logo.png">
-         <img src="http://celebrationhealtheducation.com/wp-content/uploads/2015/10/creation-logo-web-e1445309749417.png">
+         <img class="logo" src="<?php echo $nav_logo; ?>">
+         <img class="logo" src="http://celebrationhealtheducation.com/wp-content/uploads/2015/10/creation-web-logo-sm.png">
          <div class="tagline-copyright-wrapper">
            <p class="tagline"><?php echo get_bloginfo('description'); ?></p>
            <p class="copyright">&copy; <?php echo date('Y');?>. Celebration Health. All Rights Reserved.</p>
