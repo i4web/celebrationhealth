@@ -7,7 +7,7 @@
 
 ?>
 
-<?php $patients =  I4Web_LMS()->i4_wpcw->i4_get_patients(); ?>
+<?php $patients =  I4Web_LMS()->i4_wpcw->i4_get_patients(); //Retrieve the patients from the database ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="page-content-wrapper">
@@ -23,11 +23,13 @@
         </tr>
       </thead>
       <tbody>
-        <?php foreach($patients as $patient){ ?>
+        <?php foreach($patients as $patient){ //loop through each of the patients
+           $patient_courses = I4Web_LMS()->i4_wpcw->i4_get_assigned_courses($patient->ID); //Retrieve the assigned courses for the patient
+          ?>
           <tr>
             <td><?php echo $patient->user_login;?></td>
             <td><?php echo $patient->user_email;?></td>
-            <td>Spine Surgery</td>
+            <td><?php var_dump($patient_courses);?></td>
             <td><a href="#">Delete Patient</a> <br> <a href="#">Remove Courses</a></td>
           </tr>
 
