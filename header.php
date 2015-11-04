@@ -27,7 +27,7 @@
             global $current_i4_user, $i4_settings;
             $nav_logo = esc_attr( $i4_settings['i4-lms-nav-logo'] );
 
-            $i4_user_courses =  I4Web_LMS()->i4_wpcw->i4_get_assigned_courses( $current_i4_user->ID );
+            //$i4_user_courses =  I4Web_LMS()->i4_wpcw->i4_get_assigned_courses( $current_i4_user->ID ); may be used in the future to display a users course pages in the menu
 
        ?>
 
@@ -47,25 +47,29 @@
           <ul class="right top-bar-menu">
             <li ><a href="<?php echo  get_home_url(); ?>" title="View Assigned Courses">My Courses</a></li>
 
-            <?php foreach ($i4_user_courses as $i4_user_course){
+            <?php
+            //may be used in the future to display a users course pages in the menu
+            /*foreach ($i4_user_courses as $i4_user_course){
 
               $course_permalink = sanitize_title($i4_user_course->course_title);
 
               echo '<li><a href="/'.$course_permalink.'">'. $i4_user_course->course_title .'</a><li>';
             }
-
+            */
             ?>
 
             <li class="has-dropdown">
               <a href="#">Welcome, <?php echo $current_i4_user->first_name;?></a>
               <ul class="dropdown">
-              <?php if( current_user_can( 'edit_pages' )){  //Add a link to the dashboard that only site admins can see ?>
+        <?php if( current_user_can( 'activate_plugins' )){  //Add a link to the dashboard that only site admins can see ?>
                 <li><a href="<?php echo admin_url();?>">Dashboard</a></li>
-              <?php } ?>
-              <?php if( current_user_can( 'edit_pages' ) && is_single() ){ ?>
+        <?php } ?>
+        <?php if( current_user_can( 'activate_plugins' ) && is_single() ){ ?>
                 <li><a href="<?php echo get_edit_post_link();?>">Edit Page</a></li>
-              <?php }?>
-
+        <?php }?>
+        <?php if( current_user_can( 'manage_patients' )){ ?>
+                <li><a href="/manage-patients">Manage Patients</a></li>
+        <?php } ?>
                 <li><a href="/profile">Your Profile</a></li>
                 <li><a href="<?php echo wp_logout_url( get_permalink() ); ?>">Logout</a></li>
               </ul>
