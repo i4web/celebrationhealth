@@ -7,6 +7,8 @@
 
 ?>
 
+<?php $patients =  I4Web_LMS()->i4_wpcw->i4_get_patients(); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="page-content-wrapper">
     <div class="page-title"><h3><?php echo get_the_title();?> <span><a href="#" class="button tiny blue">Add New Patient</a></h3></div>
@@ -21,18 +23,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>jrivera</td>
-          <td>jrivera@i-4web.com</td>
-          <td>Spine Surgery</td>
-          <td><a href="#">Delete Patient</a> <br> <a href="#">Remove Courses</a></td>
-        </tr>
-        <tr>
-          <td>cruiz</td>
-          <td>cruiz@i-4web.com</td>
-          <td>Bariatric Surgery <br> Spine Surgery</td>
-          <td><a href="#">Delete Patient</a> <br> <a href="#">Remove Courses</a></td>
-        </tr>
+        <?php foreach($patients as $patient){ ?>
+          <tr>
+            <td><?php echo $patient->user_login;?></td>
+            <td><?php echo $patient->user_email;?></td>
+            <td>Spine Surgery</td>
+            <td><a href="#">Delete Patient</a> <br> <a href="#">Remove Courses</a></td>
+          </tr>
+
+        <?php } ?>
       </tbody>
     </table>
   </div>
