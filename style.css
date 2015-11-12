@@ -37,6 +37,11 @@ p{
   color: #3BBF4D;
 }
 
+.description {
+  font-size: 80%;
+  font-style: italic;
+}
+
 /*******************
 Buttons
 *******************/
@@ -584,21 +589,38 @@ footer {
 Manage Patients
 ********************/
 .manage-patients-table{
-  width: 100%;
+    width: 100%;
 }
 .manage-patient-action {
-  padding: .5rem;
+    padding: .5rem;
 }
 .manage-patient-action .fa {
-  color: #929292;
+    color: #929292;
 }
 
 .manage-patient-action .fa:hover{
-  color: #2a819f;
+    color: #2a819f;
 }
 .manage-patient-action .fa-times {
-  color: #7C3520 !important;
+    color: #7C3520 !important;
 }
+
+#i4_email_availability_status,
+#i4_username_availability_status {
+    background: transparent;
+    border: 0px;
+}
+
+#i4_email_availability_status .fa-exclamation,
+#i4_username_availability_status .fa-exclamation {
+    color: #D40303;
+}
+
+#i4_email_availability_status .fa-check,
+#i4_username_availability_status .fa-check {
+    color: #03B503;
+}
+
 
 /* Large Screens */
 @media only screen and (min-width: 64.063em) {
