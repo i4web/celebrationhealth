@@ -33,6 +33,10 @@ p{
   font-weight: 300 !important;
 }
 
+.text-blue{
+    color: #2a819f;
+}
+
 .font-success {
   color: #3BBF4D;
 }
@@ -254,42 +258,48 @@ My Courses
 
 .my-course-units-table{
   border: 0px;
+  border-spacing: 0px;
   width: 100%;
 }
 
 .my-course-units-table a{
-  color: #2a819f;
+    color: #3A3A3A;
 }
 
 .my-course-units-table tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .my-course-units-table td{
-  line-height: 0rem;
-  height: 2.5rem;
-  margin-bottom: .5rem;
+    height: auto;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    vertical-align: middle;
 }
 
 .my-course-link {
-  position: relative;
-  vertical-align: middle;
-  top: 0.35rem;
+    line-height: 1rem;
+    position: relative;
 }
+
 .my-courses-button {
-  margin-bottom: 0rem;
-  padding: 0.4rem 1rem !important;
+    margin-bottom: 0rem;
+    padding: 0.4rem 1rem !important;
+}
+
+.completed-icon {
+    font-size: 1.1rem;
 }
 
 .my-courses-congrats {
-  background-color: #d9edf7;
-  border-radius: .3rem;
-  padding: 0.4rem;
+    background-color: #d9edf7;
+    border-radius: .3rem;
+    padding: 0.4rem;
 }
 .my-courses-congrats p {
-  color: #31708f;
-  margin-bottom: 0rem;
+    color: #31708f;
+    margin-bottom: 0rem;
 }
 
 
