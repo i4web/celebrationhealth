@@ -196,23 +196,32 @@ Top Bar
 Logo
 *******************/
 .logo{
-  width: 9rem;
+    width: 9rem;
 }
 
 /*******************
 Completed Banner
 *******************/
 .banner-wrapper{
-  display:none;
+    display:none;
 }
 .banner-wrapper.sticky.sticky-div.fixed {
-  top: 2.80rem;
+    top: 2.80rem;
 }
 
 #completed-banner {
     position: absolute;
     width: 100%;
     z-index: 1;
+}
+
+#completed-banner .close{
+    color: #FFF;
+}
+
+.next-unit-button {
+    margin-bottom: -1px;
+    margin-left: 1rem;
 }
 
 /*******************
