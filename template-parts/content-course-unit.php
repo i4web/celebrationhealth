@@ -32,7 +32,7 @@ $i4_coordinator_img  = get_user_meta($i4_course_coordinator->ID, 'coordinator_im
 
 <article id="post-<?php the_ID(); ?>" class="course-unit-wrapper">
   <div class="row">
-    <div class="large-8 columns video-content-wrapper">
+    <div class="medium-8 large-8 columns video-content-wrapper">
       <div class="flex-video">
         <iframe id="unit-video" src="https://player.vimeo.com/video/<?php echo $video_id; ?>?api=1&amp;player_id=unit-video" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
@@ -44,7 +44,7 @@ $i4_coordinator_img  = get_user_meta($i4_course_coordinator->ID, 'coordinator_im
         <?php } ?>
       </div>
     </div> <!-- end .video-content-wrapper -->
-    <div class="large-4 columns video-details-wrapper">
+    <div class="medium-4 large-4 columns video-details-wrapper">
       <h4 class="video-details-title">Unit Details</h4>
       <div class="row">
         <div class="course-coordinator-wrapper large-12 columns">
