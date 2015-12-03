@@ -60,7 +60,7 @@ $i4_coordinator_img  = get_user_meta($i4_course_coordinator->ID, 'coordinator_im
                     <h5 class="text-center"><?php echo $i4_coordinator_name; ?><br/><small>Course Coordinator</small></h5>
                   <p id="modalTitle" class="text-center">I'm here to assist you with any questions or concerns that you may have. Just fill out the form below to email me directly.</p>
                   <hr>
-                  <?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true" field_values="patient_username='.$current_i4_user->user_login.'&amp;coordinator_email='.$i4_coordinator_email.'&amp;user_email='.$current_i4_user->user_email.'"]' ); ?>
+                  <?php echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true" field_values="patient_username='.$current_i4_user->user_login.'&amp;coordinator_email='.$i4_coordinator_email.'&amp;user_email='.$current_i4_user->user_email.'&amp;user_displayname='.$current_i4_user->display_name.'"]' ); ?>
                   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                 </div>
 
