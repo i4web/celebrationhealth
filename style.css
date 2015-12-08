@@ -423,34 +423,56 @@ Unit Course Templates
 /********************
 Course Quizzes
 ********************/
-ul.wpcw_fe_quiz_q_answers {
-  list-style: none;
+.wpcw_fe_progress_box_success {
+    padding: 2rem 2rem 2rem 2rem;
+    background: #f2f2f2;
+    margin-bottom: 1rem;
+}
+
+.wpcw_fe_quiz_q_single:nth-child(even){
+    background-color: #f2f2f2;
 }
 
 .wpcw_fe_quiz_q_single {
-  padding-top: 1rem;
-  border-bottom: 1px solid #E6e6e6;
-  padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid #E6e6e6;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.wpcw_fe_quiz_q_possible_list {
+    padding: 1rem 1rem 1rem 2rem;
+    list-style: none;
+}
+
+ul.wpcw_fe_quiz_q_answers {
+    list-style: none;
+}
+
+.wpcw_fe_quiz_q_single {
+    padding-top: 1rem;
+    border-bottom: 1px solid #E6e6e6;
+    padding-bottom: 1rem;
 }
 
 .wpcw_fe_quiz_pass_mark {
-  font-size: .9rem;
-  color: #929292;
+    font-size: .9rem;
+    color: #929292;
 }
 
 .wpcw_fe_quiz_q_title {
-  font-weight: bold;
-  padding-bottom: .5rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
 }
 
 .wpcw_fe_quiz_q_hint {
-  color: #929292;
-  font-style: italic;
-  font-size: .9rem;
+    color: #929292;
+    font-style: italic;
+    font-size: .9rem;
 }
 
 .wpcw_fe_quiz_submit.wpcw_fe_quiz_submit_data {
-  padding-top: 1rem;
+    padding-top: 1rem;
 }
 
 /********************
@@ -506,6 +528,48 @@ Category
   margin-top: 2rem;
 }
 
+
+/********************
+Accordion Plus/Minus
+********************/
+
+.accordion .accordion-navigation > a, .accordion dd > a{
+    font-size: .94rem;
+}
+
+.accordion-navigation > a:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f067";
+    font-size: 1rem;
+    float: right;
+    margin-top: .2rem;
+}
+.accordion-navigation.active > a:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f068";
+    font-size: 1rem;
+    float: right;
+    margin-top: .2rem;
+}
+
+/********************
+  Maps Page
+********************/
+
+.google-maps {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 45%; // This is the aspect ratio
+}
+.google-maps iframe {
+    height: 100% !important;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100% !important;
+
+}
 
 /********************
 Footer
