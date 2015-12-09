@@ -571,6 +571,14 @@ Accordion Plus/Minus
 
 }
 
+.upgrade-browser-alert{
+    text-align: center;
+}
+.upgrade-browser-alert a{
+    color: #FFF;
+    font-weight: 700;
+}
+
 /********************
 Footer
 ********************/

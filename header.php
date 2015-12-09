@@ -78,6 +78,12 @@
         </section>
       </nav>
     </div>
+    <!--[if IE 8]>
+        <div data-alert class="alert-box alert upgrade-browser-alert">
+          It looks like your Internet Explorer is a bit out of date. For the best experience possible, <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">Upgrade your Internet Explorer</a>.
+          <a href="#" class="close">&times;</a>
+        </div>
+    <![endif]-->
     <div class="banner-wrapper sticky sticky-div">
       <div data-alert id="completed-banner" class="alert-box success radius text-center">
         Congratulations! This video and unit has been completed! <span id="completed-next-link"></span>
