@@ -35,8 +35,7 @@
        <div class="columns large-8 footer-sub-left">
          <ul class="footer-sub-left-list">
            <li><a href="<?php echo get_bloginfo('url');?>/forms">Forms</a></li>
-           <li><a href="<?php echo get_bloginfo('url');?>/maps">Maps</a></li>
-           <li><a href="<?php echo get_bloginfo('url');?>/support">Support</a></li>
+           <li><a href="<?php echo get_bloginfo('url');?>/contact-us">Contact Us</a></li>
          </ul>
        </div>
        <div class="columns large-4 footer-sub-right">
