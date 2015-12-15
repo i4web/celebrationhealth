@@ -587,11 +587,11 @@ Accordion Plus/Minus
 Footer
 ********************/
 footer {
-  margin-top: 2rem;
-  background-color: #FFF;
-  padding: 1rem;
-  border-top: 1px solid #E0E0E0;
-  box-shadow: 0px 10px 6px 9px rgba(35, 31, 32, 0.23);
+    margin-top: 2rem;
+    background-color: #FFF;
+    padding: 1rem;
+    border-top: 1px solid #E0E0E0;
+    box-shadow: 0px 10px 6px 9px rgba(35, 31, 32, 0.23);
 
 }
 .footer-menu-wrapper{
