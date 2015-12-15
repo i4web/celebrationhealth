@@ -48,7 +48,7 @@ $i4_coordinator_img  = get_user_meta($i4_course_coordinator->ID, 'coordinator_im
       <h4 class="video-details-title">Unit Details</h4>
       <div class="row">
         <div class="course-coordinator-wrapper large-12 columns">
-          <div class="course-coordinator-details">
+            <div class="course-coordinator-details">
               <div class="course-coordinator-img">
                 <img src="<?php echo $i4_coordinator_img; ?>" alt="Coordinator Name" class="img-circle">
               </div>
@@ -64,7 +64,7 @@ $i4_coordinator_img  = get_user_meta($i4_course_coordinator->ID, 'coordinator_im
                   <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                 </div>
 
-          </div>
+            </div>
         </div>
       </div>
 
