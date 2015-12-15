@@ -103,6 +103,8 @@ function i4_scripts() {
   wp_enqueue_script('jquery');
   wp_enqueue_script( 'i4-modernizr', get_template_directory_uri().'/assets/js/vendor/modernizr.js', array(), '2.8.3', false);
   wp_enqueue_script( 'i4-foundation', get_template_directory_uri().'/assets/js/foundation.min.js', array('jquery'), '5.5.2', false);
+    wp_enqueue_script( 'i4-stickyFooter', get_template_directory_uri().'/assets/js/vendor/stickyFooter.js', array('jquery'), '2.1', false);
+
 
 }
 
