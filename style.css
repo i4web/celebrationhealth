@@ -84,6 +84,9 @@ Buttons
 /*******************
 Tabs
 *******************/
+.tabs dd, .tabs .tab-title{
+    width: 100%;
+}
 .tabs dd.active a, .tabs .tab-title.active a{
   border-bottom: 0px;
 }
@@ -95,7 +98,7 @@ Tabs
 .tabs-content{
     border: 1px solid #e6e6e6;
     padding: 1rem;
-    margin-top: -.108rem;
+    margin-top: -.12rem;
 }
 
 /*******************
@@ -738,6 +741,10 @@ Manage Patients
     font-size: 1rem;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.tabs dd, .tabs .tab-title{
+    width: auto;
 }
 
 }
