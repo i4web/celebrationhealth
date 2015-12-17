@@ -685,25 +685,6 @@ footer {
     color: #929292;
 }
 
-/********************
-Manage Patients
-********************/
-.manage-patients-table{
-    width: 100%;
-}
-.manage-patient-action {
-    padding: .5rem;
-}
-.manage-patient-action .fa {
-    color: #929292;
-}
-
-.manage-patient-action .fa:hover{
-    color: #2a819f;
-}
-.manage-patient-action .fa-times {
-    color: #7C3520 !important;
-}
 
 #i4_email_availability_status,
 #i4_username_availability_status {
