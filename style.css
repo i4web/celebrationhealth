@@ -561,7 +561,7 @@ Accordion Plus/Minus
 ********************/
 
 .google-maps {
-    height: 0;
+    min-height: 25rem;
     overflow: hidden;
     position: relative;
     padding-bottom: 45%; // This is the aspect ratio
