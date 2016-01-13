@@ -37,6 +37,30 @@ p{
     color: #2a819f;
 }
 
+.text-creation-green{
+    color: #66AA3D;
+}
+
+.text-creation-orange{
+    color: #F67F21;
+}
+
+.text-creation-pink{
+    color: #CF406C;
+}
+
+.text-creation-red{
+    color: #EE1C25;
+}
+
+.text-creation-blue{
+    color: #01AEF0;
+}
+
+.text-creation-purple{
+    color: #A83E98;
+}
+
 .font-success {
   color: #3BBF4D;
 }
@@ -722,6 +746,12 @@ footer {
     font-size: 1rem;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.creation-acronym-wrapper .creation-acronym {
+    font-size: 1.47rem;
+    height: 2rem;
+    width: 2rem;
 }
 
 .tabs dd, .tabs .tab-title{
