@@ -13,7 +13,6 @@ global $current_i4_user;
 $user_id = $current_i4_user->ID;
 
 $video_id = get_post_meta( $post->ID, 'video-id', true ); //Grab the Video ID for displaying in the Vimeo iFrame
-$video_length = get_post_meta( $post->ID, 'video-length', true ); //Grab the Video length for displaying in the video details
 $video_description = get_post_meta( $post->ID, 'video-description', true ); //Grab the Video Description
 
 
@@ -28,6 +27,10 @@ $i4_coordinator_name = $i4_course_coordinator->display_name;
 $i4_coordinator_email = $i4_course_coordinator->user_email;
 $i4_coordinator_img  = get_user_meta($i4_course_coordinator->ID, 'coordinator_img', true);
 
+//Retrieve the Docs for this course
+$i4_course_specific_docs = I4Web_LMS()->i4_course_docs->i4_lms_get_docs( $unit_parent_data->course_id );
+
+//Retrieve the title of the course
 $i4_course_title = I4Web_LMS()->i4_coordinators->i4_get_course_title($unit_parent_data->course_id);
 
 ?>
@@ -79,12 +82,28 @@ $i4_course_title = I4Web_LMS()->i4_coordinators->i4_get_course_title($unit_paren
         </tr>
         <tr>
           <td><strong>Unit</strong></td>
-          <td><?php echo get_the_title(); ?></td>
+          <td><?php echo get_the_title() . ' ('. I4Web_LMS()->i4_vimeo->get_duration($video_id) . ')'; ?></td>
         </tr>
+
+        <?php if( $i4_course_specific_docs ){  ?>
+            <tr>
+                <td><strong>Required Forms</strong></td>
+                <td><a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false"><i class="fa fa-download text-creation-green"></i> Download Forms </a>
+                    <ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" aria-autoclose="false" tabindex="-1">
+                    <?php foreach ($i4_course_specific_docs as $doc ){ //loop through the course docs and output the HTML
+                            echo '<li><a href="'.$doc->course_doc_url.'" title="'.$doc->course_doc_title.'" target="_blank">'.$doc->course_doc_title.'</a></li>';
+                    }?>
+                    </ul>
+                 </td>
+            </tr>
+        <?php } ?>
+
         <tr>
-          <td><strong>Length</strong></td>
-          <td><?php echo I4Web_LMS()->i4_vimeo->get_duration($video_id); ?></td>
+          <td><strong>Resources</strong></td>
+          <td><a href="/resources" target="_blank">View Resources</a></td>
         </tr>
+
+
       </table>
 
       <?php echo I4Web_LMS()->i4_wpcw_front_end_unit->i4_lms_unit_actions(); ?>
