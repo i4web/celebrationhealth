@@ -121,3 +121,12 @@ function i4_type_kit() {
 }
 
 add_action( 'wp_head', 'i4_type_kit' );
+
+/**
+ * Change the password hint text
+ */
+ add_filter( 'password_hint', function( $hint )
+ {
+   return __( 'Note: We recommend choosing a strong password. However feel free to set a password that you can remember!.' );
+ } );
+ 
